@@ -1,0 +1,25 @@
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  height: 22rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  & input {
+    margin-top: 1rem;
+    border: solid 1px grey;
+    padding: 1rem;
+  }
+
+  & p {
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: lightgrey;
+  }
+}
