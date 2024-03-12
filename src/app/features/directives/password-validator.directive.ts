@@ -37,6 +37,8 @@ export class PasswordValidatorDirective {
       if (LETTERS_SYMBOLS_NUMBERS.test(value)) {
         this.renderer.setAttribute(this.element.nativeElement, 'type', 'strong');
       }
+    } else {
+      this.renderer.removeAttribute(this.element.nativeElement, 'error');
     }
   }
 }
