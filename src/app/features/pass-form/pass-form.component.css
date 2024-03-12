@@ -9,6 +9,17 @@
   font-size: 2rem;
   display: flex;
   flex-direction: column;
+  z-index: -1;
+
+  @media only screen and (max-width: 31.25em) {
+    top: 0;
+    left: 0;
+    transform: none;
+    position: relative;
+    margin-top: 3rem;
+    box-shadow: none;
+    z-index: 1;
+  }
 
   & input {
     margin-top: 1rem;

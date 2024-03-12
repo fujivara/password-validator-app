@@ -4,8 +4,16 @@
   width: 100%;
   text-align: center;
 
+  @media only screen and (max-width: 31.25em) {
+    margin: 0 auto;
+    width: 70%;
+  }
+
   & h1 {
     font-size: 3rem;
+    @media only screen and (max-width: 31.25em) {
+      font-size: 2.5rem;
+    }
   }
 
   & h2 {
@@ -13,8 +21,20 @@
     font-size: 2rem;
   }
 
+  & ul {
+    list-style: none;
+  }
+
   & ul > li {
-    text-decoration: none;
     font-size: 2rem;
+    margin-bottom: 1rem;
+
+    & span {
+      font-weight: bold;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      font-size: 1.8rem;
+    }
   }
 }
