@@ -1,0 +1,12 @@
+<div class="main" [ngClass]="{
+      'password-is-wrong': isError,
+      'password-is-easy': isPasswordEasy,
+      'password-is-medium': isPasswordMedium,
+      'password-is-strong': isPasswordStrong
+    }">
+  <label for="password">Enter your password here:</label>
+  <input #input id="password" passwordValidator (keyup)="onChange()">
+  <p class="pass-type">Easy</p>
+  <p class="pass-type">Medium</p>
+  <p class="pass-type">Strong</p>
+</div>

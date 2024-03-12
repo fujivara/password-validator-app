@@ -23,3 +23,27 @@
     background-color: lightgrey;
   }
 }
+
+.password-is-wrong {
+  & p {
+    background-color: red;
+  }
+}
+
+.password-is-easy {
+  > p:first-of-type {
+    background-color: red;
+  }
+}
+
+.password-is-medium {
+  > p:not(:last-of-type) {
+    background-color: yellow;
+  }
+}
+
+.password-is-strong {
+  & p {
+    background-color: lawngreen;
+  }
+}
