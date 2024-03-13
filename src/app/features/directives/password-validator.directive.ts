@@ -15,7 +15,7 @@ import {
 export class PasswordValidatorDirective {
   constructor (private element: ElementRef, private renderer: Renderer2) {}
 
-  @HostListener('keyup')
+  @HostListener('input')
   onElementChange () {
     const value = this.element.nativeElement.value;
     if (value) {

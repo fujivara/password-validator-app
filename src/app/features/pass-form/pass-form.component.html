@@ -5,7 +5,7 @@
       'password-is-strong': isPasswordStrong
     }">
   <label for="password">Enter your password here:</label>
-  <input #input id="password" passwordValidator (keyup)="onChange()">
+  <input #input id="password" passwordValidator (input)="onChange()">
   <p class="pass-type">Easy</p>
   <p class="pass-type">Medium</p>
   <p class="pass-type">Strong</p>
